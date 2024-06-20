@@ -224,34 +224,6 @@ body {
 }
 /* END OF TEKS-domino */
 
-/* PRESIDEN RI */
-.presidenRI {
-  margin-top: 11rem;
-}
-.presidenRI-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-  gap: 2rem;
-  margin-top: 2rem;
-  cursor: pointer;
-}
-.presidenRI-img {
-  overflow: hidden;
-  border-radius: 10px;
-  transition: 1s ease;
-}
-.presidenRI-img img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  filter: brightness(105%);
-  object-fit: cover;
-}
-.presidenRI-img:hover {
-  transform: translateY(-15px);
-}
-/* END OF PRESIDEN RI */
-
 /* CONTACT */
 .contact {
   margin: 10rem 0 10rem 0;
@@ -285,7 +257,7 @@ textarea {
 
 form input::placeholder,
 textarea::placeholder {
-  color: #00661a;
+  color: #fff;
 }
 form textarea {
   resize: none;
