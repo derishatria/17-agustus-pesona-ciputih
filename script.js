@@ -1,4 +1,17 @@
-// SHOW NAVBAR
+//SHOW NAVBAR
+// const showMenu = (headerToggle, navbarId) => {
+//   const toggleBtn = document.getElementById(headerToggle),
+//     nav = document.getElementById(navbarId);
+
+//   if (headerToggle && navbarId) {
+//     toggleBtn.addEventListener("click", () => {
+//       nav.classList.toggle("show-menu");
+//       toggleBtn.classList.toggle("bx bx-grid-alt");
+//     });
+//   }
+// };
+// showMenu("header-toggle", "navbar");
+
 const showMenu = (headerToggle, navbarId) => {
   const toggleBtn = document.getElementById(headerToggle),
     nav = document.getElementById(navbarId);
@@ -8,9 +21,20 @@ const showMenu = (headerToggle, navbarId) => {
       nav.classList.toggle("show-menu");
       toggleBtn.classList.toggle("bx bx-grid-alt");
     });
+
+    // Tambahkan event listener untuk setiap item menu
+    const menuItems = nav.querySelectorAll(".nav-link");
+    menuItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        nav.classList.remove("show-menu");
+        toggleBtn.classList.remove("bx bx-grid-alt");
+      });
+    });
   }
 };
+
 showMenu("header-toggle", "navbar");
+
 
 // LINK ACTIVE
 const linkColor = document.querySelectorAll(".nav-link");

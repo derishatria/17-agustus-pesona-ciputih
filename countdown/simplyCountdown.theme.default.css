@@ -20,6 +20,19 @@
     border-radius: 10%;
 }
 
+@media (max-width: 768px) {
+    .simply-countdown > .simply-section {
+      width: 20px; /* Adjust size for smaller screens */
+      height: 20px;
+      padding: 39px;
+      margin: 8px;
+    }
+  
+    .simply-countdown > .simply-section .simply-amount {
+      font-size: 1rem; /* Adjust font-size for smaller screens */
+    }
+  }
+
 
 .simply-countdown>.simply-section .simply-amount,
 .simply-countdown>.simply-section .simply-word{
@@ -28,5 +41,5 @@
 }
 
 .simply-countdown>.simply-section .simply-amount {
-    font-size: 5rem;
+    font-size: 2rem;
 }

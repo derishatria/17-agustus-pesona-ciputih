@@ -32,7 +32,7 @@
       <div class="header-container">
         <a href="#" class="header-logo">Pesona Ciputih RT 014/004</a>
 
-        <div class="header-toggle">
+        <div class="header-toggle" onclick="toggleNavbar()">
           <i class="bx bx-grid-alt" id="header-toggle"></i>
         </div>
       </div>
@@ -108,9 +108,6 @@
       <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center">
         <div data-aos="zoom-in" data-aos-duration="1000" class="heading" > 
         <main>
-            <!-- <h3>Walimatul 'Urs</h3>
-            <h1>Panitia Lomba 17 Agustus</h1> -->
-            <h3>Menghitung hari menuju 17 Agustus, kami menanti dengan penuh semangat untuk merayakan kemerdekaan bangsa kita. Saat yang tepat untuk menghormati sejarah, menghargai kebebasan, dan bersatu dalam kebanggaan. Biarkan semangat Merdeka memenuhi hati kita saat kita bersiap merayakan pencapaian Indonesia tercinta. Bersama-sama, kita berdiri kuat, tangguh, dan siap menyongsong masa depan. Dirgahayu Republik Indonesia!</h3>
             <h2>17 | 08 | 2024</h2>
             <div class="simply-countdown"></div>
             <a href="#lomba-dewasa" class="btn btn-lg mt-4">Lomba Dewasa</a>
@@ -175,7 +172,9 @@
               </ul>
               <!-- (Source: <a class="active" href="https://id.wikipedia.org/wiki/domino_Kemerdekaan_Indonesia" target="_blank">id.wikipedia.org</a>) -->
             </p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSepi1lnptPxj-D-JdIuRzepbYoXkdeDJLsI3EOVmx0U2afLmA/viewform" class="btn" target="_blank">Daftar Sekarang!</a>
+            <div style="text-align: center;">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSepi1lnptPxj-D-JdIuRzepbYoXkdeDJLsI3EOVmx0U2afLmA/viewform" class="btn" target="_blank">Daftar Sekarang!</a>
+            </div> 
           </div>
         </div>
       </div>
@@ -195,31 +194,87 @@
             <p>kompetisi yang mempertandingkan keterampilan dalam mengelola kartu domino. Berikut adalah detail aturan dan ketentuan untuk lomba domino:</p>
             <h4>Aturan Lomba</h4>
             <ul>
-                <li> <b>>-></b> Setiap pemain akan mendapatkan 7 buah kartu domino di awal permainan.</li>
-                <li> <b>>-></b> Urutan permainan dimulai dari pemain yang memiliki kartu dengan nilai tertinggi.</li>
-                <li> <b>>-></b> Pemain harus mencocokkan kartu yang memiliki nilai yang sama dengan kartu yang ada di tengah meja.</li>
-                <li> <b>>-></b> Pemain yang berhasil menyingkirkan semua kartunya terlebih dahulu akan menjadi pemenang.</li>
-                <li> <b>>-></b> balak 0 mati poin nya 25, balak 6 mati poin nya 50.</li>
-                <li> <b>>-></b> Pertandingan secara individual.</li>
-                <li> <b>>-></b> Di setiap pertandingan di ambil 2 pemenang poin tertinggi pertama dan kedua</li>
-                <li> <b>>-></b> Pemain Di harapkan hadir 15 menit sebelum jadwal pertandingan berlangsung</li>
+              <li> <b>1.</b> Setiap pemain akan di kocok untuk menentukan posisi dan lawan nya disetiap pertandingan. </li>
+              <li> <b>2.</b> Awal pertandingan panitia yang mengocok kartunya. </li>
+              <li> <b>3.</b> Pembagian kartu harus dari kartu yang atas, dan searah jarum jam.  </li>
+              <li> <b>4.</b> Pembagian kartu awal permainan, di jejerkan/di bariskan dan pemain bebas mengambil kartu. </li>
+              <li> <b>5.</b> Kartu pertama kali main yaitu balak kosong. </li>
+              <li> <b>6.</b> Tugas kocok kartu selanjutnya oleh pemain yang kalah, dan pembagian kartu awal ke yang menang/masuk dan pembagian kartu harus dari kartu yang atas.  </li>
+              <li> <b>7.</b> Kartu balak dan kartu biasa di anggap sama tidak ada perbedaan. </li>
+              <li> <b>8.</b> Pemenang bebas mengeluarkan kartu pertama nya, (balak/biasa).  </li>
+              <li> <b>9.</b> Menang biasa / habis, dapat point dari sisa kartu pemain lawan dan menjadi point untuk yang menang. </li>
+              <li> <b>10.</b> Menang / habis dengan kartu balak dapat poin (25*2), sisa kartu lawan tidak di hitung. </li>
+              <li> <b>11.</b> Menang / habis kartu di kedua sisi (ngokang) dapat point (25*2), sisa kartu lawan tidak di hitung. </li>
+              <li> <b>12.</b> Gaple di adu ke semua pemain.  </li>
+              <li> <b>13.</b> Menang gaple dapat point (25*2) . </li>
+              <li> <b>14.</b> Apabila pemain mengapleh dan jumlah kartu nya sama dengan pemain lawan, contoh (pemain yang mengapleh kan kartunya kosong empat dan pemain lawan balak 2 ) maka pemain yang menggaplehkan di kurangi poin (-25). </li>
+              <li> <b>15.</b> Apabila pemain mengapleh dan kartu nya kalah kecil oleh semua pemain, point akan di kurangi (-50). </li>
+              <li> <b>16.</b> Apabila pemain mempunyai kartu Balak 6 dan balak kosong lalu kartu tersebut mati, maka akan di kurangi point (-25).  </li>
+              <li> <b>17.</b> Di setiap pertandingan di ambil 2 pemenang. </li>
+              <li> <b>18.</b> Apabila pemain pointnya sudah mencapai 150, game berakhir. Pemain tersebut menjadi pemenang pertama dalam set pertandingan tersebut. </li>
+              <li> <b>19.</b> Pemenang kedua di ambil dari point tertinggi ke dua. </li>
+              <li> <b>20.</b> Setiap pemenang akan di adu kembali oleh pemain yang menang dan di kocok kembali  untuk posisi dan lawan nya. </li>
+              <li> <b>21.</b> Perhitungan point di lakukan oleh pemain, di setiap set pertandingan dan hasil akhirnya di laporkan kepanitia. </li>
             </ul>
-    
-            <div class="video-container">
+            <!-- <div class="video-container">
                 <iframe width="290" height="250" src="https://www.youtube.com/embed/adhAANfQN0g" frameborder="0"></iframe>
-            </div>
-    
-            <p class="watch-video">Untuk informasi lebih lanjut tentang aturan permainan, Anda dapat menonton video di atas.</p>
-            <!-- (Source: <a class="active" href="https://id.wikipedia.org/wiki/domino_Kemerdekaan_Indonesia" target="_blank">id.wikipedia.org</a>) -->
-          </p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSecOnbMkIs6moAoeng_t6wBf3tosqj-FhSuvoiLXp7azHKxoQ/viewform" class="btn" target="_blank">Daftar Sekarang!</a>
+            </div> -->
+            <!-- <p class="watch-video">Untuk informasi lebih lanjut tentang aturan permainan, Anda dapat menonton video di atas.</p> -->
+            <div style="text-align: center;">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSecOnbMkIs6moAoeng_t6wBf3tosqj-FhSuvoiLXp7azHKxoQ/viewform" class="btn" target="_blank">Daftar Sekarang!</a>
+            </div>            
         </div>
       </div>
       </section>
       <!-- END OF catur -->
+
+      <style>
+        .sales.container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 20px;
+        }
+        h2.sales-title {
+          width: 100%;
+          font-size: 2em;
+          margin-bottom: 10px;
+        }
+        .sales-subtitle {
+          width: 100%;
+          font-size: 1.2em;
+          margin-bottom: 20px;
+        }
+        .box-link {
+          text-decoration: none;
+          width: 300px; /* Fixed width */
+          height: 200px; /* Fixed height */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+          box-sizing: border-box;
+        }
+        .box {
+          width: 100%;
+          height: 100%;
+          padding: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+        }
+        .box i {
+          font-size: 2em;
+          margin-bottom: 10px;
+        }
+      </style>
+      
        
       <!-- SALES -->
-      <section class="sales container" id="lomba-anak-5th" data-aos="fade-up" data-aos-duration="1100">
+      <section class="sales container" id="lomba-anak-5th" data-aos="zoom-in" data-aos-duration="1000">
         <h2 class="sales-title">Lomba Anak-anak</h2>
           <span class="sales-subtitle">
             <ul>
@@ -288,7 +343,7 @@
       <!-- END OF SALES -->
 
       <!-- SALES -->
-      <section class="sales container" id="lomba-dewasa" data-aos="fade-up" data-aos-duration="1100">
+      <section class="sales container" id="lomba-dewasa" data-aos="zoom-in" data-aos-duration="1000">
         <h2 class="sales-title">Lomba Dewasa</h2>
           <span class="sales-subtitle">
             <ul>
@@ -407,7 +462,6 @@
     <div id="scrollPath"></div>
 
     <!-- JS -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script>
         simplyCountdown('.simply-countdown', {
