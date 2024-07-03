@@ -24,7 +24,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ff0000;
+  background-color: #c80f27;
   box-shadow: 0 1px 0 rgba(22, 8, 43, 0.1);
   padding: 0 1rem;
   z-index: 100;
@@ -81,7 +81,7 @@ body {
   font-weight: 600;
   margin-bottom: 2.5rem;
   font-size: 1.1rem;
-  color: #ff0000;
+  color: #c80f27;
   display: flex;
   align-items: center;
 }
@@ -113,7 +113,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #ff0000;
+  color: #c80f27;
 }
 
 .nav-icon {
@@ -246,7 +246,7 @@ textarea {
   width: 100%;
   border: none;
   outline: none;
-  background: #ff0000;
+  background: #c80f27;
   margin-bottom: 1rem;
   color: #fff;
   font-size: 1.1rem;
@@ -267,7 +267,7 @@ form textarea {
   width: 90px;
   padding: 10px;
   cursor: pointer;
-  background: #ff0000;
+  background: #c80f27;
   color: #fff;
   border-radius: 30px;
   text-transform: uppercase;
@@ -284,8 +284,8 @@ form textarea {
 .footer {
   display: grid;
   place-items: center;
-  padding: 50px;
-  background: #ff0000;
+  padding: 25px;
+  background: #c80f27;
   color: #fff;
 }
 .footer h2 {
@@ -300,16 +300,16 @@ form textarea {
 }
 .copyright {
   padding: 20px;
-  background: #ec0000;
+  background: #fff;
 }
 .copyright p {
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
-  color: #fff;
+  color: #c80f27;
   font-weight: 500;
 }
 .copyright i {
-  color: #fff;
+  color: #c80f27;
 }
 /* END OF FOOTER */
 
@@ -372,7 +372,7 @@ form textarea {
 .btn {
   margin-top: 2rem;
   display: inline-block;
-  background: #ff0000;
+  background: #c80f27;
   color: #fff;
   font-weight: 500;
   padding: 0.9rem 1.2rem;
@@ -386,7 +386,7 @@ form textarea {
 
 /* ACTIVE */
 .active {
-  color: #ff0000;
+  color: #c80f27;
 }
 /* END OF ACTIVE */
 
@@ -658,7 +658,7 @@ form textarea {
 
 .sales .box {
   padding: 20px;
-  background: #ff0000;
+  background: #c80f27;
   box-shadow: var(--shadow);
   text-align: center;
   border-radius: 2rem;
@@ -926,3 +926,32 @@ form textarea {
 }
 /* END OF RESPONSIVE */
 /* Copyright © Created By Alttamiz Shahrazad Ar'raffa Purnama */
+
+
+.disqus_thread {
+  background-color: var(--bg);
+}
+
+.disqus_thread h2 {
+  font-size: 4.5rem;
+}
+
+.disqus_thread p {
+  color: white;
+}
+
+.disqus_thread form label {
+  color: white;
+}
+
+.disqus_thread button {
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid var(--pink);
+}
+
+.disqus_thread button:hover {
+  background-color: white;
+  color: var(--pink);
+  border: 1px solid white;
+}
